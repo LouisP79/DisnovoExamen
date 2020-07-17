@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Disnovo Examen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Title</string>
+    <string name="loren">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="form">Formulario</string>
+    <string name="json_get">Obtener Json</string>
+    <string name="json_post">Generar Json</string>
+
+    <string name="error_conection">There is not any internet connection, check your Wifi or Mobile Net</string>
+    <string name="error_response">response is not successful</string>
+
+</resources>

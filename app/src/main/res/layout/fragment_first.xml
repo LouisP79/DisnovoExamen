@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.form.fragment.FirstFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/default_margin">
+
+            <TextView
+                android:id="@+id/jsonResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrayDark"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:lines="10"
+                android:padding="@dimen/text_view_json_padding"
+                android:textColor="@android:color/black"
+                android:scrollbars="vertical"
+
+                tools:text="@string/loren"/>
+
+            <TextView
+                android:id="@+id/formLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="@string/form"
+                tools:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/formLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/jsonGet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/botton_margin_end_start"
+                    android:text="@string/json_get"
+                    android:theme="@style/ButtonStyle"/>
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/jsonPost"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/botton_margin_end_start"
+                    android:text="@string/json_post"
+                    android:theme="@style/ButtonStyle"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jsonRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrayDark"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:lines="6"
+                android:visibility="gone"
+                android:padding="@dimen/text_view_json_padding"
+                android:textColor="@android:color/black"
+                android:scrollbars="vertical"
+                tools:text="@string/loren"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
