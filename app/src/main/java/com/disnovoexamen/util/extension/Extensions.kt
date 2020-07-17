@@ -1,8 +1,8 @@
 package com.disnovoexamen.util.extension
 
-import com.google.android.material.textfield.TextInputEditText
+import android.widget.EditText
 
-fun TextInputEditText.validateEmpty(msg: Int): Boolean{
+fun EditText.validateEmpty(msg: Int): Boolean{
     if(this.text!!.isEmpty()){
         this.error = this.context.getString(msg)
         return false

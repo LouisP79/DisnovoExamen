@@ -9,5 +9,6 @@
 
     <string name="error_conection">There is not any internet connection, check your Wifi or Mobile Net</string>
     <string name="error_response">response is not successful</string>
+    <string name="error_empty">No deje el campo vacio</string>
 
 </resources>

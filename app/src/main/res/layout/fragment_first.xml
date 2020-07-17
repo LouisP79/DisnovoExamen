@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="@dimen/default_margin"
     tools:context=".ui.form.fragment.FirstFragment">
 
     <ProgressBar
@@ -23,8 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="@dimen/default_margin">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/jsonResponse"
@@ -32,11 +32,9 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorGrayDark"
                 android:layout_marginTop="@dimen/default_margin_top"
-                android:lines="10"
                 android:padding="@dimen/text_view_json_padding"
                 android:textColor="@android:color/black"
                 android:scrollbars="vertical"
-
                 tools:text="@string/loren"/>
 
             <TextView
@@ -92,9 +90,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorGrayDark"
                 android:layout_marginTop="@dimen/default_margin_top"
-                android:lines="6"
                 android:visibility="gone"
-                android:padding="@dimen/text_view_json_padding"
                 android:textColor="@android:color/black"
                 android:scrollbars="vertical"
                 tools:text="@string/loren"
@@ -103,6 +99,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>
